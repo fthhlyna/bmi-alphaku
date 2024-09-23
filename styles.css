@@ -1,0 +1,167 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    text-align: center; 
+}
+
+/* Container Styling */
+.container {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+header {
+    background-color: #1a9ade;
+    padding: 10px 0;
+}
+
+header h1 {
+    margin-left: 20px; /* Add some left margin for spacing */
+}
+
+nav ul {
+    list-style-type: none;
+    display: inline-flex;
+    justify-content: flex-start; /* Align nav links to the left */
+    margin-left: 20px;
+    padding: 0;
+}
+
+nav ul li {
+    margin-right: 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    background-color: #ff4081;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    background-color: #ffffff;
+    color: #1a9ade;
+    transform: scale(1.1);
+}
+
+.intro, .nutrition-tips, .exercise-tips, .common-health-issues, .bmi-calculator {
+    padding: 40px 20px;
+    text-align: left; /* Align intro content to the left */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1 {
+    color: #333;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.1em;
+    color: #666;
+    margin: 10px;
+    width: 80%;
+}
+
+footer {
+    background-color: #1a9ade;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-size: 1rem;
+}
+
+footer p {
+    margin: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left; /* Align container content to the left */
+}
+
+.bmi-calculator button {
+    background-color: #ff4081;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.bmi-calculator button:hover {
+    background-color: #ff77a9;
+}
+
+/* Animation */
+@keyframes bounceIn {
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    80% {
+        transform: scale(1.1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.cute-button {
+    display: inline-block;
+    background-color: #ff4081;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.4s ease;
+    animation: pulse 1.5s infinite;
+}
+
+.cute-button:hover {
+    background-color: #ff77a9;
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Animation for fade-in effect */
+.animated {
+    opacity: 0;
+    animation: fadeIn 1.5s forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
